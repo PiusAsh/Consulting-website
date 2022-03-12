@@ -9,8 +9,8 @@
     <!-- css stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!-- swiper stylesheet -->
-        <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
-        <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -19,82 +19,382 @@
 
 <body>
     <header>
-        <div class="container topbar">
-            <div class="row align-items-center bg-dark">
-                <!-- Topbar Section -->
-                <div class="col-lg-6">
-                    <div class="text-white text-lg-start d-none d-lg-flex align-items-center">
-                        <p>hours: Mon - Sat 9:00 - 18:00</p>
+        <section class="topbar">
+            <div class="container">
+                <div class="navSection bg-black me-4">
+                    <div class="row align-items-center bg-dark">
+                        <!-- Topbar Section -->
+                        <div class="col-lg-6">
+                            <div class="text-white text-lg-start d-none d-lg-flex align-items-center">
+                                <p>Opening hours: Mon - Sat 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                        <div class="col-6 topbar2 py-2 d-flex justify-content-end">
+                            <p class="me-3 text-white">+2349052794388</p>
+                            <p class="text-white"> Construction@example.com</p>
+                        </div>
                     </div>
-                    </div>
-                <div class="col-6 topbar2 py-2 d-flex justify-content-end">
-                    <p class="me-3 text-white">+2349052794388</p>
-                    <p class="text-white"> Construction@example.com</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Navbar Section -->
-              <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-sm">
-                  <div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""
-                              width="200"></a>
-                      <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                          aria-expanded="false" aria-label="Toggle navigation"><span
-                              class="navbar-toggler-icon"></span></button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav ms-auto align-items-lg-center">
-                              <li class="nav-item mx-2">
-                                  <!-- Link--><a class="nav-link text-uppercase active" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item mx-2">
-                                  <!-- Link--><a class="nav-link text-uppercase" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item mx-2">
-                                  <!-- Link--><a class="nav-link text-uppercase" href="contact.html">Contact</a>
-                              </li>
-                              <li class="nav-item ms-2 dropdown"><a class="nav-link text-uppercase dropdown-toggle pe-0"
-                                      id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown"
-                                      aria-haspopup="true" aria-expanded="false">Pages</a>
-                                  <div class="dropdown-menu mt-lg-4 text-sm" aria-labelledby="navbarDropdownMenuLink"><a
-                                          class="dropdown-item" href="index.html">Home</a><a class="dropdown-item"
-                                          href="about.html">About</a><a class="dropdown-item"
-                                          href="contact.html">Contact </a></div>
-                              </li>
-                              <li class="nav-item ms-lg-3 ps-lg-3"><a class="btn btn-outline-primary btn-sm"
-                                      href="contact.html">Request a quote</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
+        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-sm">
+            <div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""
+                        width="200"></a>
+                <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item mx-2">
+                            <!-- Link--><a class="nav-link text-uppercase active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!-- Link--><a class="nav-link text-uppercase" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!-- Link--><a class="nav-link text-uppercase" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2 dropdown"><a class="nav-link text-uppercase dropdown-toggle pe-0"
+                                id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu mt-lg-4 text-sm" aria-labelledby="navbarDropdownMenuLink"><a
+                                    class="dropdown-item" href="index.html">Home</a><a class="dropdown-item"
+                                    href="about.html">About</a><a class="dropdown-item" href="contact.html">Contact </a>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-lg-3 ps-lg-3"><a class="btn btn-outline-primary btn-sm"
+                                href="contact.html">Request a quote</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
- <section>
-     <div class="hero">
-         <div class="heroSlide">
-             <!-- Hero Slide-->
-             <div class="swiper-slide hero-slide bg-size bg-center py-5" style="background: url(img/hero-banner-1.jpg)">
-                 <div class="container text-white py-5 index-forward">
-                     <div class="row">
-                         <div class="col-lg-7">
-                             <h1>Choose right solution for your business</h1>
-                             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                 tempor.</p>
-                             <ul class="list-inline">
-                                 <li class="list-inline-item me-0"><a class="btn btn-primary" href="#!">Read More</a>
-                                 </li>
-                                 <li class="list-inline-item"></li><a class="btn btn-outline-light" href="#!">Our
-                                     company</a>
-                             </ul>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section>
+    <section>
+        <div class="hero">
+            <div class="heroSlide">
+                <div class="bg-center py-5" style="background: url(img/hero-banner-1.jpg)">
+                    <div class="container text-white py-5 index-forward">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Choose right solution for your business</h1>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item me-0"><a class="btn btn-primary" href="#!">About Us</a>
+                                    </li>
+                                    <li class="list-inline-item"></li><a class="btn btn-outline-light" href="#!">Contact
+                                        Us</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- end of hero section -->
+
+    <!-- Feature Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="featureText">
+                        <h5>OUR MAIN FEATURES</h5>
+                        <h3 class="ftext">We Work With You To Address Your Most Critical Business Priorities</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="row list-check">
+                            <li class="col-lg-6">Acquire live chat enables sales</li>
+                            <li class="col-lg-6">Learn from customer feedback</li>
+                            <li class="col-lg-6">Engage - marketing automation</li>
+                            <li class="col-lg-6">Support -customer support</li>
+                            <li class="col-lg-6">Acquire live chat enables sales</li>
+                            <li class="col-lg-6">Learn from customer feedback</li>
+                        </ul>
+                        <div class="sign border-top border-bottom d-flex py-3 align-items-center">
+                            <img class="w-30px me-2" src="img/about-sign.png" alt="signature">
+                            <div class="me-2 mb-0">
+                                <h5>Pius Ashogbon</h5>
+                                <p class="me-1 mb-0">Chairnan and founder</p>
+                            </div>
+                            <div class="me-3 mb-0">
+                                <h5>+2359052794388</h5>
+                                <p class="me-2 mb-0">Call to ask any question</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-auto">
+                    <div class="p-2 border">
+                        <img class="fimage shadow" src="img/about-img.jpg" alt="about image">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End of feature section -->
+
+    <!-- SERVICES SECTION -->
+
+    <section>
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-7 mx-auto">
+                    <h5 class="text-center">OUR SERVICES</h5>
+                    <h3 class="text-center">We Creating Solutions For Your Organization</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="px-4 py-3 border border-1 shadow-sm">
+                        <svg class="svg-icon mb-2 text-primary svg-icon-light svg-icon-big">
+                            <use xlink:href="#laptop-screen-1"> </use>
+                        </svg>
+                        <h3 class="h5">Business Finance Strategy</h3>
+                        <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SERVICES SECTION -->
+
+    <!-- Another section -->
+    <section class="d-flex bg-cover bg-center " style="background-image: url(img/hero-banner-1.jpg);">
+        <div class="col-lg-7 py-5 ms-auto text-center text-lg-start">
+            <h4>You Always Get the Best Guidance
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+        <div class="col-lg-3 ms-auto text-center py-5"><a class="btn btn-outline-light" href="#!">Request a quote</a>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!--End of Another section -->
+
+    <!-- Why choose us section -->
+    <section>
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-5 gx-lg-0">
+                    <div class="bg-danger pe-lg-3"><img class="img-fluid w-100" src="img/feature-img.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-7 shadow-lg py-5 px-4 p-4 p-md-5 gx-lg-0">
+                    <header>
+                        <p>Why Choose us</p>
+                        <h4>We Provide Experts To Create A Great Value For Your Business</h4>
+                        <ol class="list-numbers">
+                            <li>
+                                <h5>We modify whole system
+                                </h5>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat.</p>
+                            </li>
+                            <li>
+                                <h5>Safeguard for Your Business
+
+                                </h5>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat.</p>
+                            </li>
+                            <li>
+                                <h5>Beneficial Strategies
+                                </h5>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat.</p>
+                            </li>
+                            <li>
+                                <h5>Build Solid Human Resource
+
+                                </h5>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat.</p>
+                            </li>
+
+
+                        </ol>
+                    </header>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End of Why choose us section -->
+
+
+    <!-- Testimonial Section -->
+    <section class="py-5">
+        <div class="container">
+            <p class="text-uppercase">Our Clients Say</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 ms-auto">
+                <h3 class="text-left">The Best Solutions For<br> Developing Your Business</h3>
+            </div>
+            <div class="col-lg-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus enim totam officiis quam ea
+                laboriosam molestias, quo tenetur maiores.
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Testimonial Section -->
+
+    <!-- Achievement section -->
+    <section class="bg-light align-items-center">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <h1 class="me-2">705</h1>
+                        <p>PROJECTS COMPLETED</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <h1 class="me-2">809</h1>
+                        <p>SATISFIED CUSTOMERS</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <h1 class="me-2">359</h1>
+                        <p>AWARDS RECIEVED</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center">
+                        <h1 class="me-2">20</h1>
+                        <p>YEARS EXPERIENCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End of Achievement section -->
+
+    <!-- Footer section -->
+    <footer class="bg-black">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-5">
+                    <img class="mb-4" src="img/logo-white.svg" alt="" width="200">
+                    <p class="text-muted text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt.</p>
+                    <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-envelope"></i><span
+                            class="text-sm text-muted">Construction@example.com</span></p>
+                    <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span
+                            class="text-sm text-muted">+535
+                            421 895 6523</span></p>
+                    <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span
+                            class="text-sm text-muted">1798 Pretty View Lane, California</span></p>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mt-3 mb-4 fw-normal text-white text-center ">Quick links</h5>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-2"><a class="" href="#!">Home</a></li>
+                        <li class="mb-2"><a class="" href="#!">About</a></li>
+                        <li class="mb-2"><a class="" href="#!">Services</a></li>
+                        <li class="mb-2"><a class="" href="#!">Contacts</a></li>
+                        <li class="mb-2"><a class="" href="#!">Pages</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mt-3 mb-4 fw-normal text-white text-center
+                    ">Our services</h5>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-2"><a class="" href="#!">Make Appointment</a></li>
+                        <li class="mb-2"><a class="" href="#!">Customer Services</a></li>
+                        <li class="mb-2"><a class="" href="#!">Department Service</a></li>
+                        <li class="mb-2"><a class="" href="#!">Our Case Studies</a></li>
+                        <li class="mb-2"><a class="" href="#!">Free Consultation</a></li>
+                        <li class="mb-2"><a class="" href="#!">Meet Our Experts</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+      <div class="bg-darker py-3 border-top">
+          <div class="container text-center">
+              <p class="mb-0 text-white text-sm ">&copy; All rights reserved. Template designed by <a
+                      href="https://github.com/PiusAsh">Pius Ashgbon</a>. </p>
+          </div>
+      </div>
+    </footer>
+    <!--End of Footer section -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
